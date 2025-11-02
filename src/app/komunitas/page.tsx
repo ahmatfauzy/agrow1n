@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { CommunityTipsCard } from "@/components/community-tips-card"
 import Link from "next/link"
 import { Plus, Users, Lightbulb } from "lucide-react"
+import AuthGuard from "@/components/AuthGuard"
 
 interface CommunityTip {
   id: string
@@ -104,6 +105,8 @@ export default function KomunitasPage() {
   }
 
   return (
+    <AuthGuard>
+      
     <main className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Header */}
@@ -177,5 +180,7 @@ export default function KomunitasPage() {
         )}
       </div>
     </main>
+    
+    </AuthGuard>
   )
 }
