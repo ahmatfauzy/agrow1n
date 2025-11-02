@@ -144,6 +144,7 @@ export const reminders = pgTable("reminders", {
   scheduledDate: timestamp("scheduled_date").notNull(),
   message: text("message").notNull(),
   isCompleted: boolean("is_completed").default(false),
+  completedAt: timestamp("completed_at"),
   notificationSent: boolean("notification_sent").default(false),
   createdAt: timestamp("created_at")
     .$defaultFn(() => new Date())
