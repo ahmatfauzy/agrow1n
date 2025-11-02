@@ -4,6 +4,7 @@ import {
   Calculator,
   BookOpen,
   MessageSquare,
+  Users
 } from "lucide-react";
 
 export const features = [
@@ -36,5 +37,11 @@ export const features = [
     title: "AgroEdu Hub",
     description:
       "Platform pembelajaran singkat tentang pertanian cerdas, teknologi AI, dan praktik berkelanjutan.",
+  },
+  {
+    icon: Users,
+    title: "Active Community",
+    description:
+      "Terhubung dengan sesama petani untuk berbagi pengalaman, tips, dan inovasi pertanian secara langsung.",
   },
 ];
