@@ -1,30 +1,31 @@
 export interface Article {
-    id: string
-    slug: string
-    title: string
-    description: string
-    image: string
-    content: string
-    category: string
-    author?: string
-    date?: string
-    duration?: string
-    icon?: React.ReactNode
-  }
-  
-  export const articlesData: Article[] = [
-    {
-      id: "1",
-      slug: "pestisida-alami",
-      title: "Mengenal Pestisida Alami: Ramah Lingkungan dan Murah Meriah",
-      description:
-        "Pelajari cara membuat pestisida alami dari bahan-bahan sederhana yang ramah lingkungan dan aman untuk keluarga.",
-      image: "/pestisida-alami-organik.jpg",
-      category: "Panduan Teknis",
-      author: "Tim AgroWin",
-      date: "15 Oktober 2024",
-      duration: "8 menit baca",
-      content: `
+  id: string;
+  slug: string;
+  title: string;
+  description: string;
+  image: string;
+  content: string;
+  category: string;
+  author?: string;
+  date?: string;
+  duration?: string;
+  icon?: React.ReactNode;
+}
+
+export const articlesData: Article[] = [
+  {
+    id: "1",
+    slug: "pestisida-alami",
+    title: "Mengenal Pestisida Alami: Ramah Lingkungan dan Murah Meriah",
+    description:
+      "Pelajari cara membuat pestisida alami dari bahan-bahan sederhana yang ramah lingkungan dan aman untuk keluarga.",
+    image:
+      "https://res.cloudinary.com/deifn0fgm/image/upload/v1762186463/pestisida-alami-organik_vlguig.jpg",
+    category: "Panduan Teknis",
+    author: "Tim AgroWin",
+    date: "15 Oktober 2024",
+    duration: "8 menit baca",
+    content: `
         <h2>Pendahuluan</h2>
         <p>Dalam dunia pertanian modern, kesadaran akan pentingnya kelestarian lingkungan dan kesehatan semakin meningkat. Banyak petani, baik skala rumahan maupun komersial, mulai beralih dari pestisida kimia sintetis ke alternatif yang lebih ramah lingkungan, yaitu pestisida alami. Pestisida alami terbuat dari bahan-bahan yang berasal dari alam, seperti tumbuhan, dan berfungsi untuk mengendalikan serangan hama dan penyakit pada tanaman. Artikel ini akan memperkenalkan beberapa resep pestisida alami yang mudah dibuat sendiri, efektif, dan tentunya lebih aman bagi keluarga serta ekosistem.</p>
   
@@ -130,19 +131,20 @@ export interface Article {
           <li>University of California Statewide Integrated Pest Management Program (UC IPM). (n.d.). Natural Pesticides. Diakses dari ipm.ucanr.edu. (Sumber terpercaya untuk panduan pengendalian hama terpadu).</li>
         </ol>
       `,
-    },
-    {
-      id: "2",
-      slug: "pupuk-kompos",
-      title: "Mengenal Pupuk Kompos: Cara Membuat Sendiri dari Sampah Dapur",
-      description:
-        "Panduan lengkap membuat pupuk kompos organik dari sampah dapur untuk tanaman yang lebih sehat dan lingkungan yang lebih baik.",
-      image: "/pupuk-kompos-organik.jpg",
-      category: "Pupuk Organik",
-      author: "Tim AgroWin",
-      date: "12 Oktober 2024",
-      duration: "10 menit baca",
-      content: `
+  },
+  {
+    id: "2",
+    slug: "pupuk-kompos",
+    title: "Mengenal Pupuk Kompos: Cara Membuat Sendiri dari Sampah Dapur",
+    description:
+      "Panduan lengkap membuat pupuk kompos organik dari sampah dapur untuk tanaman yang lebih sehat dan lingkungan yang lebih baik.",
+    image:
+      "https://res.cloudinary.com/deifn0fgm/image/upload/v1762187136/pupuk-kompos-organik_scdy7s.jpg",
+    category: "Pupuk Organik",
+    author: "Tim AgroWin",
+    date: "12 Oktober 2024",
+    duration: "10 menit baca",
+    content: `
         <h2>Pendahuluan</h2>
         <p>Dalam dunia pertanian modern yang mulai kembali ke alam, pupuk kompos telah menjadi pilar utama dalam budidaya yang berkelanjutan. Kompos tidak hanya sekadar alternatif pupuk kimia, tetapi juga solusi cerdas untuk mengelola sampah organik rumah tangga. Dengan membuat kompos sendiri, kita tidak hanya menghasilkan "emas hitam" untuk tanaman tetapi juga berkontribusi langsung dalam mengurangi beban tempat pembuangan akhir (TPA). Artikel ini akan membimbing Anda untuk memahami apa itu kompos dan bagaimana cara mudah membuatnya sendiri di rumah.</p>
   
@@ -234,19 +236,20 @@ export interface Article {
           <li>United States Department of Agriculture (USDA). - Natural Resources Conservation Service. (n.d.). Composting. Diakses dari nrcs.usda.gov</li>
         </ol>
       `,
-    },
-    {
-      id: "3",
-      slug: "kesalahan-petani-pemula",
-      title: "5 Kesalahan Fatal Petani Pemula dan Cara Menghindarinya",
-      description:
-        "Pelajari 7 kesalahan umum yang sering dilakukan petani pemula dan bagaimana cara menghindarinya untuk hasil panen yang lebih baik.",
-      image: "/petani-pemula-berkebun.jpg",
-      category: "Tips & Trik",
-      author: "Tim AgroWin",
-      date: "10 Oktober 2024",
-      duration: "12 menit baca",
-      content: `
+  },
+  {
+    id: "3",
+    slug: "kesalahan-petani-pemula",
+    title: "5 Kesalahan Fatal Petani Pemula dan Cara Menghindarinya",
+    description:
+      "Pelajari 7 kesalahan umum yang sering dilakukan petani pemula dan bagaimana cara menghindarinya untuk hasil panen yang lebih baik.",
+    image:
+      "https://res.cloudinary.com/deifn0fgm/image/upload/v1762186693/petani-pemula-berkebun_v4ge5x.jpg",
+    category: "Tips & Trik",
+    author: "Tim AgroWin",
+    date: "10 Oktober 2024",
+    duration: "12 menit baca",
+    content: `
         <h2>Pendahuluan</h2>
         <p>Memulai kegiatan bercocok tanam, baik sekadar untuk hobi maupun untuk kebutuhan sehari-hari, adalah sebuah langkah yang menyenangkan. Namun, antusiasme yang tinggi tanpa diimbangi dengan pengetahuan yang cukup seringkali berujung pada kegagalan. Tanaman yang awalnya subur tiba-tiba layu, tidak kunjung berbuah, atau bahkan mati. Jangan khawatir! Kegagalan adalah bagian dari proses belajar. Artikel ini akan mengupas 7 kesalahan fatal yang sering dilakukan petani pemula dan yang terpenting, bagaimana cara menghindarinya agar Anda bisa sukses dari berkebun pertama.</p>
   
@@ -334,19 +337,21 @@ export interface Article {
           <li>Booth, W. (2018). The Gardener's Guide to Common-Sense Pest Control. Taunton Press. (Membahas pendekatan praktis dan preventif dalam mengendalikan hama).</li>
         </ol>
       `,
-    },
-    {
-      id: "4",
-      slug: "vertikultur-urban-farming",
-      title: "Memaksimalkan Lahan Sempit dengan Vertikultur: Solusi Cerdas Bertani di Perkotaan",
-      description:
-        "Teknik vertikultur untuk memaksimalkan lahan sempit di perkotaan dan menciptakan urban farming yang produktif dan estetis.",
-      image: "/vertikultur-urban-farming.jpg",
-      category: "Teknik Bertani",
-      author: "Tim AgroWin",
-      date: "8 Oktober 2024",
-      duration: "11 menit baca",
-      content: `
+  },
+  {
+    id: "4",
+    slug: "vertikultur-urban-farming",
+    title:
+      "Memaksimalkan Lahan Sempit dengan Vertikultur: Solusi Cerdas Bertani di Perkotaan",
+    description:
+      "Teknik vertikultur untuk memaksimalkan lahan sempit di perkotaan dan menciptakan urban farming yang produktif dan estetis.",
+    image:
+      "https://res.cloudinary.com/deifn0fgm/image/upload/v1762187085/vertikultur-urban-farming_fkvbru.jpg",
+    category: "Teknik Bertani",
+    author: "Tim AgroWin",
+    date: "8 Oktober 2024",
+    duration: "11 menit baca",
+    content: `
         <h2>Pendahuluan: Saat Lahan Menyempit, Solusi Menjulang ke Atas</h2>
         <p>Bayangkan ini: Anda tinggal di apartemen atau rumah petak dengan pekarangan yang nyaris tidak ada. Atau, Anda memiliki halaman, tetapi hanya seluas carport mobil. Di sisi lain, hasrat untuk menghijaukan lingkungan dan menikmati sayuran segar dari kebun sendiri begitu besar. Apakah mustahil? Sama sekali tidak. Jawabannya ada pada seni bercocok tanam yang tidak lagi memandang luas lahan, tetapi memanfaatkan dimensi vertikal: Vertikultur.</p>
         <p>Vertikultur, berasal dari kata "vertical" dan "culture", adalah teknik budidaya tanaman dengan menggunakan sistem bertingkat atau tegak lurus. Ini adalah konsep urban farming yang revolusioner, mengubah dinding kosong, pagar, dan sudut-sempit menjadi "ladang" produktif yang hijau dan estetis. Artikel ini akan membawa Anda menyelami dunia vertikultur, dari memahami manfaatnya hingga tutorial membuatnya sendiri.</p>
@@ -443,19 +448,20 @@ export interface Article {
           <li>Kementerian Pekerjaan Umum dan Perumahan Rakyat RI. (2018). Panduan Taman Vertikal untuk Bangunan Gedung. Direktorat Jenderal Cipta Karya. (Memberikan perspektif lokal tentang implementasi taman vertikal).</li>
         </ol>
       `,
-    },
-    {
-      id: "5",
-      slug: "hidroponik-wick",
-      title: "Hidroponik Sederhana Sistem Wick untuk Pemula, Tanpa Ribet!",
-      description:
-        "Panduan lengkap membuat sistem hidroponik wick yang sederhana, murah, dan cocok untuk pemula tanpa perlu listrik.",
-      image: "/sistem-hidroponik-wick.jpg",
-      category: "Hidroponik",
-      author: "Tim AgroWin",
-      date: "5 Oktober 2024",
-      duration: "9 menit baca",
-      content: `
+  },
+  {
+    id: "5",
+    slug: "hidroponik-wick",
+    title: "Hidroponik Sederhana Sistem Wick untuk Pemula, Tanpa Ribet!",
+    description:
+      "Panduan lengkap membuat sistem hidroponik wick yang sederhana, murah, dan cocok untuk pemula tanpa perlu listrik.",
+    image:
+      "https://res.cloudinary.com/deifn0fgm/image/upload/v1762187076/sistem-hidroponik-wick_lymkkl.jpg",
+    category: "Hidroponik",
+    author: "Tim AgroWin",
+    date: "5 Oktober 2024",
+    duration: "9 menit baca",
+    content: `
         <h2>Pendahuluan</h2>
         <p>Apakah Anda ingin menanam sayuran segar tetapi terkendala lahan yang sempit atau tanah yang tidak subur? Jika iya, maka hidroponik adalah jawabannya. Hidroponik adalah metode bercocok tanam tanpa menggunakan tanah sebagai media tumbuhnya, melainkan dengan memanfaatkan air yang telah diperkaya dengan nutrisi. Dari berbagai sistem hidroponik yang ada, sistem Wick atau sumbu adalah yang paling mudah, murah, dan sangat direkomendasikan untuk pemula. Artikel ini akan memandu Anda langkah demi langkah membuat instalasi hidroponik sistem wick sendiri di rumah.</p>
   
@@ -540,6 +546,5 @@ export interface Article {
           <li>Savvas, D., & Gruda, N. (2018). "Application of soilless culture technologies in the modern greenhouse industry: A review." European Journal of Horticultural Science, 83(5), 280-293. (Artikel jurnal yang membahas efektivitas berbagai teknik budidaya tanpa tanah).</li>
         </ol>
       `,
-    },
-  ]
-  
+  },
+];

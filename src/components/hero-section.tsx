@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Handphone from "../../public/hp-hero-section.webp";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import User from "../../public/profile-farmer.webp";
 
 export default function HeroSection() {
   return (
@@ -12,8 +10,9 @@ export default function HeroSection() {
           <div className="order-1 lg:order-2 lg:col-span-6">
             <div className="relative flex items-center justify-center w-full aspect-[5/4] sm:aspect-[4/3] md:aspect-[4/3]">
               <Image
-                src={Handphone}
+                src="https://res.cloudinary.com/deifn0fgm/image/upload/v1762186408/hp-hero-section_wuulcd.webp"
                 width={400}
+                height={400}
                 alt="Drone pertanian bertenaga AI memantau lahan"
                 className="object-cover rounded-xl"
                 sizes="(min-width: 1024px) 48vw, (min-width: 640px) 80vw, 95vw"
@@ -46,7 +45,6 @@ export default function HeroSection() {
                     <span>Ayo Mulai</span>
                   </Button>
                 </Link>
-
               </div>
 
               {/* User */}
@@ -55,7 +53,9 @@ export default function HeroSection() {
                   {Array.from({ length: 3 }).map((_, i) => (
                     <Image
                       key={i}
-                      src={User}
+                      src={
+                        "https://res.cloudinary.com/deifn0fgm/image/upload/v1762186720/profile-farmer_bpmxst.webp"
+                      }
                       alt="Foto petani pengguna Agro"
                       width={36}
                       height={36}

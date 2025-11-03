@@ -1,7 +1,6 @@
 import React from "react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
-import Drone from "../../public/drone-ai.webp";
 
 const AboutSection = () => {
   return (
@@ -15,7 +14,9 @@ const AboutSection = () => {
           <div className="order-1 lg:order-1 lg:col-span-6">
             <div className="relative w-full aspect-[4/3] sm:aspect-[5/4] lg:aspect-[4/3]">
               <Image
-                src={Drone}
+                src={
+                  "https://res.cloudinary.com/deifn0fgm/image/upload/v1762186270/drone-ai_wlrcdm.webp"
+                }
                 alt="Ilustrasi drone berbasis AI memantau lahan pertanian"
                 fill
                 priority
@@ -31,15 +32,21 @@ const AboutSection = () => {
               </h2>
 
               <p className="mt-4 text-sm sm:text-base text-muted-foreground">
-              AgroWin hadir sebagai solusi digital bagi para petani untuk meningkatkan produktivitas dan efisiensi pertanian.
+                AgroWin hadir sebagai solusi digital bagi para petani untuk
+                meningkatkan produktivitas dan efisiensi pertanian.
               </p>
 
               <p className="mt-3 text-sm sm:text-base text-muted-foreground">
-              Dengan teknologi kecerdasan buatan (AI), AgroWin membantu menentukan waktu tanam dan panen terbaik, mendeteksi tanda awal penyakit tanaman, serta menganalisis kondisi cuaca dan lingkungan secara real-time.
+                Dengan teknologi kecerdasan buatan (AI), AgroWin membantu
+                menentukan waktu tanam dan panen terbaik, mendeteksi tanda awal
+                penyakit tanaman, serta menganalisis kondisi cuaca dan
+                lingkungan secara real-time.
               </p>
 
               <p className="mt-3 text-sm sm:text-base text-muted-foreground">
-              Melalui pendekatan berbasis data, AgroWin mendukung petani dalam mengambil keputusan yang lebih tepat, efisien, dan menguntungkan menuju pertanian yang lebih cerdas, berkelanjutan, dan modern.
+                Melalui pendekatan berbasis data, AgroWin mendukung petani dalam
+                mengambil keputusan yang lebih tepat, efisien, dan menguntungkan
+                menuju pertanian yang lebih cerdas, berkelanjutan, dan modern.
               </p>
             </div>
           </div>
