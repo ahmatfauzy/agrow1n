@@ -103,6 +103,7 @@ export default function EdukasiPage() {
                         height={500}
                         src={article.image || "/placeholder.svg"}
                         alt={article.title}
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
 

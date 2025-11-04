@@ -66,6 +66,7 @@ type PlantingState = {
 };
 
 export default function DeteksiPage() {
+  const [loading, setLoading] = useState(false);
   const [diseaseData, setDiseaseData] = useState<DiseaseState>({
     image: null,
     imagePreview: null,
@@ -99,6 +100,7 @@ export default function DeteksiPage() {
     }
 
     try {
+      setLoading(true);
       const requestBody = {
         crop_type: harvestData.cropType,
         area: Number.parseFloat(harvestData.landArea),
@@ -119,6 +121,7 @@ export default function DeteksiPage() {
       const data = await response.json();
 
       if (response.ok) {
+        setLoading(false);
         setHarvestData((prev) => ({
           ...prev,
           expectedYield: data.estimated_yield.toString(),
@@ -618,10 +621,11 @@ export default function DeteksiPage() {
                   </div>
 
                   <button
+                    disabled={loading}
                     onClick={calculateHarvest}
                     className="w-full bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
                   >
-                    Hitung Estimasi Panen
+                    {loading ? "Menghitung..." : "Hitung Estimasi Panen"}
                   </button>
 
                   {harvestData.expectedYield && (
